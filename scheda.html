@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title> palestra.it - Crea la tua scheda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asset/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="asset/css/scheda.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+
+    <header class="header-scheda">
+        <div class="top-bar">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Apri il menu">☰</button>
+
+            <nav class="menu-laterale" id="menu-lista">
+                <a href="index.html" title="Ritorna alla home">Home</a>
+                <a href="servizi.html">Servizi</a>
+                <a href="abbonamenti.html">Abbonamenti</a>
+                <a href="fondatori.html">Fondatori</a>
+            </nav>
+        </div>
+
+        <h1>Crea la tua scheda personalizzata</h1>
+        <p class="sottotitolo-scheda">
+            Compila i campi e inviaci le tue informazioni per ricevere una scheda adatta al tuo livello.
+        </p>
+    </header>
+
+    <main class="contenuto-scheda">
+        <section class="box-form">
+            <form class="form-scheda" id="form-scheda">
+
+                <fieldset>
+                    <legend>Scegli il servizio</legend>
+
+                    <p>
+                        <label for="servizio">Servizio</label>
+                        <select id="servizio" name="servizio" required>
+                            <option value="">Seleziona un servizio</option>
+                            <option value="calisthenics">Calisthenics</option>
+                            <option value="bodybuilding">Bodybuilding</option>
+                            <option value="boxe">Boxe</option>
+                            <option value="pilates">Pilates</option>
+                            <option value="crossfit">Crossfit</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <div class="griglia-form">
+                    <p>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Inserisci il nome" required>
+                    </p>
+
+                    <p>
+                        <label for="cognome">Cognome</label>
+                        <input type="text" id="cognome" name="cognome" placeholder="Inserisci il cognome" required>
+                    </p>
+
+                    <p>
+                        <label for="eta">Età</label>
+                        <input type="number" id="eta" name="eta" placeholder="Inserisci l'età" required>
+                    </p>
+
+                    <p>
+                        <label for="peso">Peso</label>
+                        <input type="number" id="peso" name="peso" placeholder="Inserisci il peso" required>
+                    </p>
+
+                    <p>
+                        <label for="altezza">Altezza</label>
+                        <input type="number" id="altezza" name="altezza" placeholder="Inserisci l'altezza" required>
+                    </p>
+
+                    <p>
+                        <label for="livello">Livello</label>
+                        <select id="livello" name="livello" required>
+                            <option value="">Seleziona il livello</option>
+                            <option value="principiante">Principiante</option>
+                            <option value="intermedio">Intermedio</option>
+                            <option value="avanzato">Avanzato</option>
+                        </select>
+                    </p>
+
+                    <p class="campo-largo">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+                    </p>
+                </div>
+
+                <p class="contenitore-bottone">
+                    <button type="submit" class="bottone-crea">Crea scheda</button>
+                </p>
+
+            </form>
+
+            <div class="messaggio-conferma" id="messaggio-conferma">
+                <p><strong>Scheda creata!</strong></p>
+                <p>Te la invieremo via email al più presto.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <h3>AS Atlantic</h3>
+            <p>La tua palestra di fiducia</p>
+        </div>
+
+        <div>
+            <h3>Contatti</h3>
+            <p>Via Alloro 25, Gagliano Castelferrato</p>
+            <p>Contrada San Giuseppe snc, Calascibetta</p>
+            <p>Tel: 3755022958 / 3338817585</p>
+            <p>Email: AS_Atlanticinfo@gmail.com</p>
+        </div>
+
+        <div>
+            <h3>Link utili</h3>
+            <p><a href="chi_siamo.html">Chi siamo</a></p>
+            
+        </div>
+    </footer>
+    <script>
+        const bottone = document.getElementById("menu-toggle");
+        const menuLista = document.getElementById("menu-lista");
+
+        bottone.onclick = function () {
+            menuLista.classList.toggle("mostra");
+        };
+
+        const formScheda = document.getElementById("form-scheda");
+        const messaggioConferma = document.getElementById("messaggio-conferma");
+
+        formScheda.addEventListener("submit", function(event) {
+            event.preventDefault();
+            messaggioConferma.classList.add("attivo");
+            formScheda.reset();
+        });
+    </script>
+
+</body>
+</html>

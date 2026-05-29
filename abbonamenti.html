@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Palestra.it - I nostri abbonamenti</title>
+    <link rel="shortcut icon" href="asset/img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="author" content="Alessio & Salvo">
+    <meta name="description" content="Palestra">
+    <meta name="keywords" content="esercizi, muscoli">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/abbonamenti.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+    <div class="menu-hamburger">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <nav class="menu-laterale" id="menuLaterale">
+                    <a href="index.html">Home</a>
+                    <a href="fondatori.html">I Fondatori</a>
+                    <a href="scheda.html">Crea la tua scheda</a>
+                    <a href="servizi.html">Servizi</a>
+        </nav>
+    </div>
+
+    <div class="titolo-header">
+        <h1 id="nome">AS Atlantic</h1>
+        <img id="logo" src="asset/img/logo.png" alt="logo palestra" width="120">
+    </div>
+</header>
+
+<main>
+    <h1 id="ab">I nostri abbonamenti</h1>
+    <h2 class="sottotitolo">Scegli la promo più adatta a te</h2>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h2>PROMO ESTATE</h2>
+            <img src="asset/img/promo1.png" alt="Promo estate">
+            <p>Allenati per tutta l'estate con un prezzo conveniente e accesso alla sala pesi.</p>
+        </div>
+
+        <div class="flex-item">
+            <h2>PORTA UN AMICO</h2>
+            <img src="asset/img/gymbro.png" alt="Promo bro">
+            <p>Ideale per chi vuole convincere un bro ad allenarsi.</p>
+        </div>
+
+        <div class="flex-item">
+            <h2>PROMO COPPIA</h2>
+            <img src="asset/img/zita.png" alt="Promo donzella">
+            <p>Perfetta per allenarsi insieme alla propria dolce metà.</p>
+        </div>
+    </div>
+
+    <section class="sport-section">
+        <h2>Scegli il tuo sport</h2>
+        <div class="sport-buttons">
+            <a href="bodybuilding.html">Bodybuilding</a>
+            <a href="crossfit.html">Crossfit</a>
+            <a href="boxing.html">Boxing</a>
+            <a href="pilates.html">Pilates</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div>
+        <h3>AS Atlantic</h3>
+        <p>La tua palestra di fiducia</p>
+    </div>
+
+    <div>
+        <h3>Contatti</h3>
+        <p>Via Alloro 25, Gagliano Castelferrato</p>
+        <p>Contrada San Giuseppe snc, Calascibetta</p>
+        <p>Tel: 3755022958/3338817585</p>
+        <p>Email: AS_Atlanticinfo@gmail.com</p>
+    </div>
+
+    <div>
+        <h3>Link utili</h3>
+        <p><a href="chi_siamo.html">Chi siamo</a></p>
+    </div>
+</footer>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menuLaterale");
+    menu.classList.toggle("mostra");
+}
+</script>
+
+</body>
+</html>

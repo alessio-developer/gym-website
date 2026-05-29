@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1f1f1f;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.top-banner{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #111;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+}
+
+.banner-superiore{
+    background-color: #0c6b74;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.scritta-scorrimento{
+    width: 100%;
+    overflow: hidden;
+}
+
+.scritta-scorrimento span{
+    display: inline-block;
+    padding: 12px 0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    animation: scorri 18s linear infinite;
+}
+
+@keyframes scorri{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.banner-inferiore{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    position: relative;
+    background-color: #151515;
+}
+
+.banner-sinistra,
+.banner-destra{
+    width: 25%;
+    position: relative;
+}
+
+.banner-centro{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#nome{
+    color: #ffffff;
+    text-align: center;
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+#logo{
+    display: block;
+}
+
+.menu-toggle{
+    background-color: #0c6b74;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-toggle:hover{
+    background-color: #15919d;
+    transform: scale(1.05);
+}
+
+.menu-laterale{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 12px;
+    min-width: 220px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.menu-laterale a{
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.menu-laterale a:hover{
+    background-color: #0c6b74;
+}
+
+.mostra{
+    display: flex;
+}
+
+.banner-destra{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-contatti{
+    display: inline-block;
+    background-color: #e4f4f5;
+    color: #0c6b74;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-contatti:hover{
+    background-color: #0c6b74;
+    color: white;
+}
+
+.hero{
+    min-height: 85vh;
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.65)),
+                url("../img/Calisthenics.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-contenuto{
+    max-width: 850px;
+}
+
+#benvenuto{
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.sottotitolo{
+    font-size: 20px;
+    line-height: 1.6;
+    color: #e8e8e8;
+    margin-bottom: 30px;
+}
+
+.hero-bottoni{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-bottoni a{
+    padding: 14px 24px;
+    border-radius: 10px;
+    background-color: #0c6b74;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-bottoni a:hover{
+    transform: translateY(-3px);
+    background-color: #15919d;
+}
+
+.hero-bottoni .secondario{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.hero-bottoni .secondario:hover{
+    background-color: white;
+    color: #111;
+}
+
+.intro{
+    max-width: 900px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.intro h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #e4f4f5;
+}
+
+.intro p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #d7d7d7;
+}
+
+.punti-forza{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 20px 20px 80px 20px;
+}
+
+.box{
+    background-color: #2a2a2a;
+    width: 300px;
+    padding: 30px 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.box:hover{
+    transform: translateY(-8px);
+    background-color: #0c6b74;
+}
+
+.box h3{
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.box p{
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.frase-finale{
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(to right, #0c6b74, #083f45);
+}
+
+.frase-finale h2{
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.frase-finale p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.frase-finale a{
+    display: inline-block;
+    background-color: white;
+    color: #0c6b74;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.frase-finale a:hover{
+    transform: scale(1.05);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background-color: #111;
+    color: white;
+}
+
+.footer div{
+    max-width: 300px;
+}
+
+.footer h3{
+    margin-bottom: 12px;
+    color: #e4f4f5;
+}
+
+.footer p{
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.footer a{
+    color: #9fe7ee;
+}
+
+.footer a:hover{
+    color: white;
+}
+
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+img,
+iframe,
+video{
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-container,
+.griglia-servizi,
+.griglia-abbonamenti,
+.focus-bodybuilding,
+.focus-crossfit,
+.focus-boxing,
+.focus-pilates,
+.card-sede,
+.sezioni-sedi,
+.punti-forza,
+.footer{
+    width: 100%;
+}

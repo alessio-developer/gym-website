@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Palestra.it</title>
+    <link rel="shortcut icon" href="asset/img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="author" content="Alessio & Salvo">
+    <meta name="description" content="AS Atlantic - palestra, fitness e calisthenics">
+    <meta name="keywords" content="palestra, fitness, calisthenics, esercizi, muscoli">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+
+    <header class="top-banner">
+        <div class="banner-superiore">
+            <div class="scritta-scorrimento">
+                <span>
+                    AS Atlantic • Allenati con costanza • Supera i tuoi limiti • Energia, forza e disciplina •
+                    AS Atlantic • Allenati con costanza • Supera i tuoi limiti • Energia, forza e disciplina •
+                </span>
+            </div>
+        </div>
+
+        <div class="banner-inferiore">
+            <div class="banner-sinistra">
+                <button class="menu-toggle" id="menu-toggle" aria-label="Apri il menu">☰</button>
+
+                <nav class="menu-laterale" id="menu-lista">
+                    <a href="fondatori.html">I Fondatori</a>
+                    <a href="servizi.html">Servizi</a>
+                    <a href="scheda.html">Crea la tua scheda</a>
+                    <a href="abbonamenti.html">Abbonamenti</a>
+                </nav>
+            </div>
+
+            <div class="banner-centro">
+                <h1 id="nome">AS Atlantic</h1>
+                <img id="logo" src="asset/img/logo.png" alt="Logo AS Atlantic" width="150">
+            </div>
+
+            <div class="banner-destra">
+                <img src="asset/img/manubrio.png" alt="manubrio" width="50">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="overlay"></div>
+            <div class="hero-contenuto">
+                <h2 id="benvenuto">Benvenuti nella nostra palestra</h2>
+                <p class="sottotitolo">
+                    Un ambiente giovane, motivante e costruito per aiutarti a migliorare forza, forma fisica e mentalità.
+                </p>
+                <div class="hero-bottoni">
+                    <a href="servizi.html">Scopri i servizi</a>
+                    <a href="scheda.html" class="secondario">Crea la tua scheda</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>La nostra idea di allenamento</h2>
+            <p>
+                AS Atlantic è più di una semplice palestra: è uno spazio dove costanza, disciplina e determinazione
+                diventano risultati concreti. Ogni allenamento è pensato per farti crescere, migliorare e superare i tuoi limiti.
+            </p>
+        </section>
+
+        <section class="punti-forza">
+            <div class="box">
+                <h3>Ambiente motivante</h3>
+                <p>Allenati in uno spazio dinamico, positivo e adatto a ogni livello.</p>
+            </div>
+
+            <div class="box">
+                <h3>Allenamento completo</h3>
+                <p>Dalla forza al benessere, con attività pensate per obiettivi diversi.</p>
+            </div>
+
+            <div class="box">
+                <h3>Crescita costante</h3>
+                <p>Ogni percorso parte da te e punta a migliorare giorno dopo giorno.</p>
+            </div>
+        </section>
+
+        <section class="frase-finale">
+            <h2>Allenati con metodo. Cresci con costanza.</h2>
+            <p>Il tuo percorso inizia da una scelta: entra nel mondo AS Atlantic.</p>
+            <a href="luogo.html">Vieni a trovarci</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <h3>AS Atlantic</h3>
+            <p>La tua palestra di fiducia</p>
+        </div>
+
+        <div>
+            <h3>Contatti</h3>
+            <p>Via Alloro 25, Gagliano Castelferrato</p>
+            <p>Contrada San Giuseppe snc, Calascibetta</p>
+            <p>Tel: 3755022958 / 3338817585</p>
+            <p>Email: AS_Atlanticinfo@gmail.com</p>
+        </div>
+
+        <div>
+            <h3>Link utili</h3>
+            <p><a href="chi_siamo.html">Chi siamo</a></p>
+            
+        </div>
+    </footer>
+
+    <script>
+        const bottone = document.getElementById("menu-toggle");
+        const menuLista = document.getElementById("menu-lista");
+
+        bottone.onclick = function () {
+            menuLista.classList.toggle("mostra");
+        };
+    </script>
+
+</body>
+</html>

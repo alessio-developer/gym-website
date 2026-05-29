@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi siamo - AS Atlantic</title>
+    <link rel="shortcut icon" href="asset/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/chisiamo.css">
+</head>
+
+<body>
+
+    <header class="top-banner">
+        
+
+        <div class="banner-inferiore">
+            <div class="banner-sinistra">
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+                <div class="menu-laterale" id="menuLaterale">
+                    <a href="index.html">Home</a>
+                    <a href="servizi.html">Servizi</a>
+                    <a href="abbonamenti.html">Abbonamenti</a>
+                    <a href="fondatori.html">Fondatori</a>
+                    <a href="scheda.html">Crea la tua scheda</a>
+                </div>
+            </div>
+
+            <div class="banner-centro">
+                <h1 id="nome">AS Atlantic</h1>
+                <img id="logo" src="asset/img/logo.png" alt="Logo AS Atlantic" width="90">
+            </div>
+
+           <div class="banner-destra">
+                <img src="asset/img/manubrio.png" alt="manubrio" width="50">
+            </div>
+        </div>
+    </header>
+
+    <main class="pagina-chi-siamo">
+        <section class="chi-siamo">
+            <div class="chi-siamo-intestazione">
+                <h2>Chi siamo</h2>
+                <p class="frase-effetto">AS Atlantic: dove la forza incontra la costanza.</p>
+            </div>
+
+            <div class="chi-siamo-contenuto">
+                <p>
+                    AS Atlantic è una palestra nata con l’obiettivo di offrire un ambiente giovane, motivante e accessibile a tutti, dove ogni persona possa allenarsi, migliorarsi e superare i propri limiti giorno dopo giorno.
+                </p>
+
+                <p>
+                    Non siamo soltanto una sala allenamento, ma uno spazio dedicato alla crescita fisica e mentale, alla disciplina e alla voglia di stare meglio.
+                    Crediamo che allenarsi significhi costruire sicurezza, energia e fiducia in sé stessi.
+                </p>
+
+                <p>
+                    La nostra palestra è pensata sia per chi inizia da zero, sia per chi vuole raggiungere risultati sempre più alti.
+                    In AS Atlantic ogni percorso conta, perché ogni obiettivo merita impegno, attenzione e costanza.
+                </p>
+
+                <p>
+                    Il nostro ambiente unisce passione, determinazione e spirito di squadra, creando un luogo in cui allenarsi seriamente ma con entusiasmo.
+                    Vogliamo essere un punto di riferimento per chi cerca una palestra dinamica, moderna e concreta.
+                </p>
+            </div>
+
+            <div class="info-palestra">
+                <div class="info-box">
+                    <h3>Le nostre sedi</h3>
+                    <p>Via Alloro 25, Gagliano Castelferrato</p>
+                    <p>Contrada San Giuseppe snc, Calascibetta</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Contatti</h3>
+                    <p>Tel: 3755022958 / 3338817585</p>
+                    <p>Email: AS_Atlanticinfo@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <h3>AS Atlantic</h3>
+            <p>Una palestra giovane, dinamica e pensata per chi vuole migliorarsi ogni giorno.</p>
+        </div>
+
+        <div>
+            <h3>Contatti</h3>
+            <p>Via Alloro 25, Gagliano Castelferrato</p>
+            <p>Contrada San Giuseppe snc, Calascibetta</p>
+            <p>Tel: 3755022958 / 3338817585</p>
+            <p>Email: <a href="mailto:AS_Atlanticinfo@gmail.com">AS_Atlanticinfo@gmail.com</a></p>
+        </div>
+
+        <div>
+            <h3>Link utili</h3>
+            <p><a href="chi_siamo.html">Chi siamo</a></p>
+            <p><a href="abbonamenti.html">Abbonamenti</a></p>
+            <p><a href="servizi.html">Servizi</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menuLaterale");
+            menu.classList.toggle("mostra");
+        }
+    </script>
+
+</body>
+</html>

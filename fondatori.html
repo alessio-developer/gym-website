@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Palestra.it - I Fondatori</title>
+    <link rel="shortcut icon" href="asset/img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="author" content="Alessio & Salvo">
+    <meta name="description" content="AS Atlantic - palestra, fitness e calisthenics">
+    <meta name="keywords" content="palestra, fitness, calisthenics, esercizi, muscoli">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/fondatori.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+
+    <header class="header-fondatori">
+        <div class="top-bar">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Apri il menu">☰</button>
+
+            <nav class="menu-laterale" id="menu-lista">
+                <a href="index.html">Home</a>
+                    <a href="servizi.html">Servizi</a>
+                    <a href="scheda.html">Crea la tua scheda</a>
+                    <a href="abbonamenti.html">Abbonamenti</a>
+            </nav>
+        </div>
+
+        <h1>I FONDATORI DELLA AS ATLANTIC</h1>
+    </header>
+
+    <main class="contenuto-fondatori">
+        <section class="introduzione">
+            <p>
+                La palestra AS Atlantic è stata fondata da due ragazzi di 18 anni, provenienti da due piccoli paesi
+                della provincia di Enna, in Sicilia. Tutto è partito da un semplice allenamento condiviso nel mondo
+                del calisthenics e, con il passare del tempo, è nata l’idea di costruire una palestra capace di dare
+                ad altre persone uno spazio dove allenarsi bene, crescere e trovare gli attrezzi giusti per migliorare.
+            </p>
+        </section>
+
+        <section class="principale">
+            <div class="card-fondatore" id="Alessio">
+                <div class="foto-fondatore">
+                    <img src="asset/img/Ale.jpeg" alt="Foto di Alessio">
+                </div>
+                <div class="testo-fondatore">
+                    <h2>Alessio</h2>
+                    <h3>Fondatore e istruttore di calisthenics</h3>
+                    <p>
+                        Appassionato di calisthenics, si allena con costanza da due anni e porta in palestra energia,
+                        rigore tecnico e un approccio pratico all’allenamento a corpo libero.
+                    </p>
+                    <p>
+                        Come istruttore, punta a far crescere forza, mobilità e fiducia nei propri mezzi con programmi
+                        semplici ma progressivi, adatti sia ai principianti sia a chi vuole migliorare gli skill.
+                    </p>
+                    <p>
+                        Nella creazione di AS Atlantic ha voluto mettere al centro la comunità, gli allenamenti di gruppo
+                        e un ambiente dove fare progressi insieme.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card-fondatore" id="Salvo">
+                <div class="foto-fondatore">
+                    <img src="asset/img/salvo.jpeg" alt="Foto di Salvatore">
+                </div>
+                <div class="testo-fondatore">
+                    <h2>Salvatore</h2>
+                    <h3>Fondatore, istruttore e trainer di forza</h3>
+                    <p>
+                        Con cinque anni di esperienza nel calisthenics, combina passione e metodo per aiutare chi si
+                        allena a costruire forza reale e tecnica solida.
+                    </p>
+                    <p>
+                        È specializzato nella creazione di schede di allenamento personalizzate, semplici da seguire,
+                        progressive e pensate per ottenere risultati concreti senza complicazioni.
+                    </p>
+                    <p>
+                        In palestra mette l’accento sul supporto pratico, sul sorriso e sull’atmosfera di gruppo,
+                        offrendo attenzione vera ai progressi di ogni persona.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <h3>AS Atlantic</h3>
+            <p>La tua palestra di fiducia</p>
+        </div>
+
+        <div>
+            <h3>Contatti</h3>
+            <p>Via Alloro 25, Gagliano Castelferrato</p>
+            <p>Contrada San Giuseppe snc, Calascibetta</p>
+            <p>Tel: 3755022958 / 3338817585</p>
+            <p>Email: AS_Atlanticinfo@gmail.com</p>
+        </div>
+
+        <div>
+            <h3>Link utili</h3>
+            <p><a href="chi_siamo.html">Chi siamo</a></p>
+            
+        </div>
+    </footer>
+
+    <script>
+        const bottone = document.getElementById("menu-toggle");
+        const menuLista = document.getElementById("menu-lista");
+
+        bottone.onclick = function () {
+            menuLista.classList.toggle("mostra");
+        };
+    </script>
+
+</body>
+</html>

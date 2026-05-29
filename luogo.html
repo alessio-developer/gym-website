@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Palestra.it - Le nostre sedi</title>
+    <link rel="shortcut icon" href="asset/img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="author" content="Alessio & Salvo">
+    <meta name="description" content="Le sedi della nostra palestra a Calascibetta e Gagliano Castelferrato">
+    <meta name="keywords" content="palestra, sedi, calascibetta, gagliano castelferrato, fitness">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/luogo.css">
+</head>
+<body>
+
+    <header class="top-banner">
+        
+
+        <div class="banner-inferiore">
+            <div class="banner-sinistra">
+                <button class="menu-toggle" onclick="document.getElementById('menu').classList.toggle('mostra')">
+                    ☰
+                </button>
+
+                <nav class="menu-laterale" id="menu">
+                    <a href="index.html">Home</a>
+                    <a href="fondatori.html">I Fondatori</a>
+                    <a href="servizi.html">Servizi</a>
+                    <a href="abbonamenti.html">Abbonamenti</a>
+                    <a href="scheda.html">Crea la tua scheda</a>
+                </nav>
+            </div>
+
+            <div class="banner-centro">
+                <h1 id="nome">AS Atlantic</h1>
+            </div>
+
+            <div class="banner-destra">
+                <img src="asset/img/manubrio.png" alt="manubrio" width="50">
+            </div>
+        </div>
+    </header>
+
+    <main class="pagina-sedi">
+        <section class="intro-sedi">
+            <p class="etichetta">Vieni a trovarci</p>
+            <h2>Le nostre sedi</h2>
+            <p class="testo-intro">
+                La nostra palestra è presente in due sedi per essere ancora più vicina a chi vuole allenarsi con costanza,
+                serietà e passione. La prima realtà è nata a Calascibetta, da cui è iniziato il nostro percorso, e con il tempo
+                abbiamo ampliato il progetto anche a Gagliano Castelferrato per offrire un punto di riferimento in più a tutti
+                gli appassionati di fitness, benessere e preparazione atletica.
+            </p>
+        </section>
+
+        <section class="sezioni-sedi">
+            <article class="card-sede sede-sinistra">
+                <div class="testo-sede">
+                    <h3>Sede di Calascibetta</h3>
+                    <p>
+                        È la sede da cui tutto ha avuto inizio: un luogo costruito con impegno, esperienza e voglia di far crescere
+                        una comunità sportiva unita. Qui portiamo avanti ogni giorno il nostro metodo di lavoro, con attenzione
+                        alla persona, alla tecnica e agli obiettivi di ciascun atleta.
+                    </p>
+                </div>
+
+                <div class="mappa-sede">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3160.8716868294964!2d14.259842875875615!3d37.605178772028594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDM2JzE4LjYiTiAxNMKwMTUnNDQuNyJF!5e0!3m2!1sit!2sit!4v1778937729968!5m2!1sit!2sit"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+
+            <article class="card-sede sede-destra">
+                <div class="mappa-sede">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.504292829854!2d14.53217307649443!3d37.707839216011955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13113309a3b3096d%3A0x5126079a55e5fbb8!2sVia%20Alloro%2C%2025%2C%2094010%20Gagliano%20Castelferrato%20EN!5e0!3m2!1sen!2sit!4v1778937466912!5m2!1sen!2sit"
+                        allowfullscreen=""
+                        loading="lazy"
+                        ></iframe>
+                </div>
+
+                <div class="testo-sede">
+                    <h3>Sede di Gagliano Castelferrato</h3>
+                    <p>
+                        Con la sede di Gagliano Castelferrato abbiamo esteso la nostra presenza sul territorio, mantenendo lo stesso
+                        stile di lavoro, la stessa cura degli ambienti e la stessa attenzione verso chi desidera migliorare il proprio
+                        benessere fisico. È uno spazio pensato per allenarsi con energia, motivazione e continuità.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <h3>AS Atlantic</h3>
+            <p>La tua palestra di fiducia</p>
+        </div>
+
+        <div>
+            <h3>Contatti</h3>
+            <p>Via Alloro 25, Gagliano Castelferrato</p>
+            <p>Contrada San Giuseppe snc, Calascibetta</p>
+            <p>Tel: 3755022958 / 3338817585</p>
+            <p>Email: AS_Atlanticinfo@gmail.com</p>
+        </div>
+
+        <div>
+            <h3>Link utili</h3>
+            <p><a href="chi_siamo.html">Chi siamo</a></p>
+            
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-toggle");
+        const menu = document.getElementById("menu");
+    </script>
+</body>
+</html>

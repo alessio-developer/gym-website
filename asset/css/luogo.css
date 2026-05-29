@@ -1,0 +1,72 @@
+.pagina-sedi{
+    width: min(1200px, 92%);
+    margin: 0 auto;
+    padding: 70px 0 90px 0;
+}
+
+.intro-sedi{
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+}
+
+.intro-sedi h2{
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.sezioni-sedi{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.card-sede{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #2a2a2a;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 22px;
+    padding: 28px;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-sede:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.32);
+}
+
+.testo-sede,
+.mappa-sede{
+    flex: 1;
+}
+
+.testo-sede{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testo-sede h3{
+    font-size: 30px;
+    color: #e4f4f5;
+    margin-bottom: 18px;
+}
+
+.testo-sede p{
+    font-size: 17px;
+    line-height: 1.8;
+    color: #d7d7d7;
+}
+
+.mappa-sede iframe{
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    border: 0;
+    border-radius: 18px;
+}

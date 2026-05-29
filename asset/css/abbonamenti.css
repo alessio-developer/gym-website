@@ -1,0 +1,91 @@
+.top-header{
+    background-color: #111;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.menu-hamburger{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.titolo-header{
+    text-align: center;
+}
+
+#ab{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 38px;
+}
+
+.sottotitolo{
+    text-align: center;
+    color: #9fe7ee;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    background-color: #2a2a2a;
+    border: 2px solid #0c6b74;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+}
+
+.flex-item h2{
+    margin-bottom: 15px;
+    color: #e4f4f5;
+    font-size: 24px;
+}
+
+.flex-item img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.flex-item p{
+    color: #d7d7d7;
+    line-height: 1.5;
+}
+
+.sport-section{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.sport-section h2{
+    margin-bottom: 20px;
+    color: #e4f4f5;
+    font-size: 30px;
+}
+
+.sport-buttons a{
+    display: inline-block;
+    margin: 10px;
+    background-color: #e4f4f5;
+    color: #0c6b74;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.sport-buttons a:hover{
+    background-color: #0c6b74;
+    color: white;
+}
