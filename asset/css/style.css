@@ -353,3 +353,378 @@ video{
 .footer{
     width: 100%;
 }
+
+/* =========================
+RESPONSIVE GLOBALE SITO
+========================= */
+
+html,
+body{
+  overflow-x: hidden;
+}
+
+img,
+iframe,
+video{
+  max-width: 100%;
+  height: auto;
+}
+
+/* TABLET */
+@media (max-width: 900px){
+
+  .banner-inferiore{
+    padding: 16px 18px;
+    gap: 12px;
+  }
+
+  .banner-sinistra,
+  .banner-destra{
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .banner-centro{
+    width: auto;
+    flex: 1;
+    min-width: 0;
+  }
+
+  #nome{
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  #logo{
+    width: 110px;
+    height: auto;
+  }
+
+  .menu-toggle{
+    font-size: 26px;
+    padding: 9px 15px;
+  }
+
+  .menu-laterale{
+    top: 62px;
+    left: 0;
+    min-width: 200px;
+    max-width: 80vw;
+  }
+
+  .hero{
+    min-height: auto;
+    padding: 70px 20px;
+  }
+
+  #benvenuto{
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  .sottotitolo{
+    font-size: 18px;
+  }
+
+  .hero-bottoni{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-bottoni a{
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .punti-forza{
+    gap: 20px;
+  }
+
+  .box{
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .footer{
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer div{
+    max-width: 100%;
+  }
+
+  .griglia-servizi,
+  .griglia-abbonamenti,
+  .focus-bodybuilding,
+  .focus-crossfit,
+  .focus-boxing,
+  .focus-pilates,
+  .card-sede,
+  .sezioni-sedi{
+    grid-template-columns: 1fr !important;
+    flex-direction: column;
+  }
+}
+
+/* TELEFONI */
+@media (max-width: 600px){
+
+  .banner-superiore{
+    white-space: nowrap;
+  }
+
+  .scritta-scorrimento span{
+    font-size: 13px;
+    padding: 10px 0;
+  }
+
+  .banner-inferiore{
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .banner-sinistra{
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .banner-centro{
+    width: auto;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .banner-destra{
+    display: none;
+  }
+
+  #nome{
+    font-size: 22px;
+    line-height: 1.1;
+  }
+
+  #logo{
+    width: 82px;
+    height: auto;
+  }
+
+  .menu-toggle{
+    font-size: 24px;
+    padding: 8px 14px;
+    border-radius: 8px;
+  }
+
+  .menu-laterale{
+    top: 58px;
+    left: 0;
+    min-width: 170px;
+    max-width: 88vw;
+    padding: 10px;
+  }
+
+  .menu-laterale a{
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .btn-contatti{
+    padding: 9px 12px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .hero{
+    padding: 55px 16px;
+  }
+
+  #benvenuto{
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .sottotitolo{
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .intro{
+    margin: 50px auto;
+    padding: 0 16px;
+  }
+
+  .intro h2,
+  .frase-finale h2,
+  .intro-servizi h2,
+  .intro-sedi h2,
+  .intro-bodybuilding h2,
+  .intro-crossfit h2,
+  .intro-boxing h2,
+  .intro-pilates h2{
+    font-size: 28px;
+  }
+
+  .intro p,
+  .frase-finale p,
+  .testo-intro,
+  .intro-bodybuilding p,
+  .intro-crossfit p,
+  .intro-boxing p,
+  .intro-pilates p,
+  .testo-hero{
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .box{
+    width: 100%;
+    max-width: 100%;
+    padding: 22px 18px;
+  }
+
+  .box h3,
+  .contenuto-servizio h3,
+  .card-abbonamento h3,
+  .focus-box h3,
+  .testo-sede h3{
+    font-size: 22px;
+  }
+
+  .box p,
+  .contenuto-servizio p,
+  .card-abbonamento ul,
+  .focus-testo p,
+  .focus-box p,
+  .testo-sede p{
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .frase-finale{
+    padding: 60px 16px;
+  }
+
+  .frase-finale a{
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .footer{
+    padding: 30px 16px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer h3{
+    font-size: 20px;
+  }
+
+  .footer p,
+  .footer a{
+    font-size: 15px;
+  }
+
+  .pagina-servizi,
+  .pagina-sedi,
+  .pagina-bodybuilding,
+  .pagina-crossfit,
+  .pagina-boxing,
+  .pagina-pilates{
+    width: 94%;
+    padding: 45px 0 65px 0;
+  }
+
+  .contenuto-servizio,
+  .card-abbonamento,
+  .focus-testo,
+  .focus-box,
+  .card-sede{
+    padding: 20px 16px;
+  }
+
+  .prezzo{
+    font-size: 32px;
+  }
+
+  .immagine-servizio{
+    height: 210px;
+    object-fit: cover;
+  }
+
+  .mappa-sede iframe{
+    min-height: 240px;
+  }
+
+  .header-bodybuilding,
+  .header-crossfit,
+  .header-boxing,
+  .header-pilates{
+    padding: 45px 16px 55px 16px;
+  }
+
+  .hero-bodybuilding h1,
+  .hero-crossfit h1,
+  .hero-boxing h1,
+  .hero-pilates h1{
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .btn-torna{
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
+
+/* TELEFONI MOLTO PICCOLI */
+@media (max-width: 380px){
+
+  #nome{
+    font-size: 18px;
+  }
+
+  #logo{
+    width: 70px;
+  }
+
+  .menu-toggle{
+    font-size: 22px;
+    padding: 8px 12px;
+  }
+
+  .menu-laterale{
+    min-width: 150px;
+  }
+
+  .btn-contatti{
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  #benvenuto,
+  .hero-bodybuilding h1,
+  .hero-crossfit h1,
+  .hero-boxing h1,
+  .hero-pilates h1{
+    font-size: 26px;
+  }
+
+  .intro h2,
+  .intro-servizi h2,
+  .intro-sedi h2,
+  .intro-bodybuilding h2,
+  .intro-crossfit h2,
+  .intro-boxing h2,
+  .intro-pilates h2,
+  .frase-finale h2{
+    font-size: 24px;
+  }
+
+  .prezzo{
+    font-size: 28px;
+  }
+}
